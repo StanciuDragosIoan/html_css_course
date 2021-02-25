@@ -1,0 +1,18 @@
+ .item-1 {
+        /* makes item NOT shrink */
+        flex-shrink: 0;
+      }
+
+      .item-2 {
+        /* sets width */
+        flex-grow: 1;
+        /* clears default width */
+        flex-basis: 0;
+      }
+
+      .item-3 {
+        /* sets width 2x */
+        flex-grow: 2;
+        /* clears default width */
+        flex-basis: 0;
+      }

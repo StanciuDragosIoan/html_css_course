@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .item {
+        background: #f4f4f4;
+        border: #ccc solid 2px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        width: 200px;
+      }
+
+      .flex-container {
+        display: flex;
+        /* this is set to row by default and this is the main axis */
+        flex-direction: row-reverse; /*now the column is the main axis so vertical and the horiz is the cross axis*/
+        flex-wrap: wrap;
+        flex: 1 0 300px;
+      }
+      /*
+      .item-1 {
+      // makes item NOT shrink  
+        flex-shrink: 0;
+      }
+
+      .item-2 {
+        // sets width  
+        flex-grow: 1;
+        // clears default width 
+        flex-basis: 0;
+      }
+
+      .item-3 {
+        // sets width 2x
+        flex-grow: 2;
+        // clears default width
+        flex-basis: 0;
+      }
+      */
+      .item-3 {
+        flex: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="item item-1">
+        <h3>Item 1</h3>
+      </div>
+
+      <div class="item item-2">
+        <h3>Item 2</h3>
+      </div>
+
+      <div class="item item-3">
+        <h3>Item 3</h3>
+      </div>
+    </div>
+  </body>
+</html>
